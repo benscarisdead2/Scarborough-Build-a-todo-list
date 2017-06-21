@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>To-Do List App</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
   </head>
   <body>
     <center>
+    <img class="logo" src="img/logo.png">
     <div class="container">
         <form action="/" method="post">
             <input type="text" name="todo" value="" placeholder="Add a to-do...">
@@ -15,6 +17,9 @@
         {{#todos}}
         <input type="checkbox">{{.}}</input><br>
         {{/todos}}
+        <h2>Completed</h2>
+        {{#completed}}
+        {{/completed}}
     </div>
     </center>
   </body>
